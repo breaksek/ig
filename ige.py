@@ -959,7 +959,7 @@ def check():
 
 if __name__=='__main__':
     try:
-    	getkey()
+    	getkey("key.txt")
     except requests.exceptions.ConnectionError:
         exit(f'\n[{M}!{C}] Koneksi internet bermasalah')
     folder()
