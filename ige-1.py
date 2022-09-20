@@ -913,9 +913,9 @@ def apikey():
 	if chs in ["1","01"]:
 		prem()
 	elif chs in ["2","02"]:
-		print('\n- 100k 1bulan\n- 50k 2minggu\n\n- Masukan Pesan, Info Tambahkan Tanda + Untuk Spasi Pesan');i=input('- Pesan : ');print('- Pesan Anda : \033[32m%s \033[0mAkan Segera Terkirim Mohon Tunggu....'%(i));time.sleep(2);os.system('xdg-open https://wa.me/6287817284768?text=%s'%(i));exit()
+		print('\n- 100k 1bulan\n- 50k 2minggu\n\n- Masukan Pesan, Info Tambahkan Tanda + Untuk Spasi Pesan');i=input('- Pesan : ');print('- Pesan Anda : \033[32m%s \033[0mAkan Segera Terkirim Mohon Tunggu....'%(i));time.sleep(2);os.system('xdg-open https://wa.me/6281331184338?text=%s'%(i));exit()
 	#elif chs in ["3","03"]:
-		#print('\n- ');print('- Masukan Pesan Untuk Di Kirim Ke Admin');i=input('- Pesan : ');print('- Pesan Anda : \033[32m%s \033[0mAkan Segera Terkirim Mohon Tunggu....'%(i));time.sleep(2);os.system('xdg-open https://wa.me/6287817284768?text=%s'%(i));exit()
+		#print('\n- ');print('- Masukan Pesan Untuk Di Kirim Ke Admin');i=input('- Pesan : ');print('- Pesan Anda : \033[32m%s \033[0mAkan Segera Terkirim Mohon Tunggu....'%(i));time.sleep(2);os.system('xdg-open https://wa.me/6281331184338?text=%s'%(i));exit()
 def check():
 	try:os.mkdir('data')
 	except:pass
