@@ -129,9 +129,9 @@ def clear():
 def waktu():
 	now = datetime.now()
 	hours = now.hour
-	if 4 <= hours < 12:timenow = "Good Morning"
-	elif 12 <= hours < 15:timenow = "Good Afternoon"
-	elif 15 <= hours < 18:timenow = "Good Evening"
+	if 4 <= hours < 12:timenow = "Selamat Pagi Tuan"
+	elif 12 <= hours < 15:timenow = "Selamat Siang Tuan"
+	elif 15 <= hours < 18:timenow = "Selamat Malam Tuan"
 	else:timenow = "Good Night"
 	return timenow
 
@@ -649,7 +649,7 @@ class instagram:
             elif mas in ['t','T']:
                 massal(self)
             elif mas in ['']:
-                print('ISI JANGAN KOSONG KENTOD!')
+                print('Isi Tod !, Jangan Di Kosongin!')
 
 
         elif c in ('3','03'):
@@ -660,7 +660,7 @@ class instagram:
             elif mas in ['t','T']:
                 meng(self)
             elif mas in ['']:
-                print('ISI JANGAN KOSONG KENTOD!')
+                print('Isi Tod !, Jangan Di Kosongin!')
 
 
         elif c in ('4','04'):
