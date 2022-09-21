@@ -132,7 +132,7 @@ def waktu():
 	if 4 <= hours < 12:timenow = "Selamat Pagi Tuan"
 	elif 12 <= hours < 15:timenow = "Selamat Siang Tuan"
 	elif 15 <= hours < 18:timenow = "Selamat Malam Tuan"
-	else:timenow = "Good Night"
+	else:timenow = "Selamat Malam Tuan"
 	return timenow
 
 
@@ -197,11 +197,11 @@ def login_kamu():
         except FileNotFoundError:
             banner()
             print('[1] Login Menggunakan Cookie\n[2] Login Menggunakan Username & Password')
-            loginpil=input(f"\n[•] Chouse :{C} ")
+            loginpil=input(f"\n[•] Pilih > {C} ")
             if loginpil=='1':
                 print('\n[•] Gunakan username dan cookies instagram untuk login. sebelum login pastikan akun bersifat publik bukan privat')
-                us=input(f'[•] Username :{C}')
-                cok=input(f'[•] Cookie :{C}')
+                us=input(f'[•] Username > {C}')
+                cok=input(f'[•] Cookie > {C}')
                 kuki=open('.kukis.log','w').write(cok)
                 user=open('.username','w').write(us)
                 print(f"[•] Login Succes.... Run Again")
