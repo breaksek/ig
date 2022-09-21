@@ -199,8 +199,8 @@ def login_kamu():
             print('[1] Login Menggunakan Cookie\n[2] Login Menggunakan Username & Password')
             loginpil=input(f"\n[•] Pilih > {C} ")
             if loginpil=='1':
-                print('\n[!] Gunakan username dan cookies instagram untuk login. sebelum login pastikan akun bersifat publik bukan privat')
-                us=input(f'[•] Masukkan Username > {C}')
+                print('\n[!] Gunakan username dan cookies instagram untuk login. sebelum login pastikan akun bersifat publik bukan privat !')
+                us=input(f'\n[•] Masukkan Username > {C}')
                 cok=input(f'[•] Masukkin Cookie > {C}')
                 kuki=open('.kukis.log','w').write(cok)
                 user=open('.username','w').write(us)
