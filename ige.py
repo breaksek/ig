@@ -217,7 +217,7 @@ def login_kamu():
 def login():
     global external
     try:
-        print('\n[•] Gunakan username dan password instagram untuk login. sebelum login pastikan akun bersifat publik bukan privat')
+        print('\n[!] Gunakan username dan password instagram untuk login !\n[!] Sebelum login pastikan akun bersifat publik bukan privat !')
         us=input(f"[•] Username: {C}")
         pw=stdiomask.getpass(prompt=f'[•] Password: {C}')
     except KeyboardInterrupt:
@@ -629,11 +629,11 @@ class instagram:
 
     def menu(self):
         self.logo()
-        c=input(f'\n[•] chouse : ')
+        c=input(f'\n[•] Masukkan : ')
         if c=='':
             self.menu()
         elif c in ('1','01'):
-            print('\n[•] Masukan Jumlah Pencarian ');m=int(input(f'[•] Jumlah : '));print('')
+            print('\n[•] Masukan Jumlah Pencarian !');m=int(input(f'[•] Jumlah : '));print('')
             print('[•] Masukan Nama Randome')
             for i in range(m):
                 i+1
@@ -643,7 +643,7 @@ class instagram:
 
         elif c in ('2','02'):
             print('\n[•] Pastikan Target Instagram Anda Publick')
-            mas=input('[•] anda ingin crack masal? y/t >  ')
+            mas=input('[•] Anda ingin crack masal? y/t >  ')
             if mas in ['y','Y']:
                 masal(self)
             elif mas in ['t','T']:
@@ -654,7 +654,7 @@ class instagram:
 
         elif c in ('3','03'):
             print('\n[•] Pastikan Target Instagram Anda Publick')
-            mas=input('[•] anda ingin crack masal? y/t >  ')
+            mas=input('[•] Anda ingin crack masal? y/t >  ')
             if mas in ['y','Y']:
                 mengi(self)
             elif mas in ['t','T']:
