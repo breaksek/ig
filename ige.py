@@ -201,7 +201,7 @@ def login_kamu():
             if loginpil=='1':
                 print('\n[!] Gunakan username dan cookies instagram untuk login !\n[!] Sebelum login pastikan akun bersifat publik bukan privat !')
                 us=input(f'\n[•] Masukkan Username > {C}')
-                cok=input(f'[•] Masukkin Cookie > {C}')
+                cok=input(f'[•] Masukkan Cookie > {C}')
                 kuki=open('.kukis.log','w').write(cok)
                 user=open('.username','w').write(us)
                 print(f"[•] Login Succes.... \n[•] Run Again.... ")
