@@ -806,29 +806,29 @@ def getkey():
     except FileNotFoundError:
         #os.system("clear")
         #none();time.sleep(1)
-        print("\n\033[0m╰─ Author breaksek ")
-        print("\033[0m╰─ License Anda Tidak Tersedia ");time.sleep(2)
-        print("\n╰─ 100k 1 bulan\n╰─ 50k 2 minggu\n╰─ 25k 1 Minggu")
+        print("\n\033[0m•> Author breaksek ")
+        print("\033[0m•> License Anda Tidak Tersedia ");time.sleep(2)
+        print("\n~> 100k : 1 bulan\n~> 50k : 2 minggu\n~> 25k : 1 Minggu")
         print ("")
-        print("\033[0m╰─ license anda :\033[32m "+crot);time.sleep(1)
-        namamu = input("\033[0m╰─ nama anda : ")
-        yt = input("\033[0m╰─ Chat Admin Untuk Beli Lisensi y/t? > ")
+        print("\033[0m•> license anda :\033[32m "+crot);time.sleep(1)
+        namamu = input("\033[0m•> nama anda : ")
+        yt = input("\033[0m•> Chat Admin Untuk Beli Lisensi y/t? > ")
         if yt in ["Y","y"]:
-            os.system("xdg-open https://wa.me/+6281331184338?text=Hai+kak,+aku+mau+beli+scriptnya+tapi+yang+versi+premium.+Ini+lisensinya:%20"+crot+"+konfitmasi+nama+pembeli:%20"+namamu)
+            os.system("xdg-open https://wa.me/+6281331184338?text=Hai+bg+rif,+aku+mau+beli+scriptnya+tapi+yang+versi+premium.+Ini+lisensinya:%20"+crot+"+konfirmasi+nama+pembeli:%20"+namamu)
             open(".key.txt","w").write(crot+"\n"+namamu)
             exit()
         else:
-            exit("\033[0m╰─ Telah keluar program")
+            exit("\033[0m•> Telah keluar program")
     try:
         confirmkey = requests.get("https://raw.githubusercontent.com/breaksek/igprem/main/key.txt").json()
     except requests.exceptions.ConnectionError:
-        print("\033[0m╰─ Jaringan Internet Kamu Tidak Ada");exit()
+        print("\033[0m[!] Jaringan Internet Kamu Tidak Ada");exit()
     if confirmkey[files] == key:
         if confirmkey[files] == "tidakada":
-            print("\n\033[0m╰─ Lisensi key Kamu Sudah Kadaluarsa")
+            print("\n\033[0m~> Lisensi key Kamu Sudah Kadaluarsa <~")
             os.system("rm -rf .key.txt");exit()
         else:
-        	print("\n\033[0m╰─ Lisensi key Kamu Sudah Aktif");time.sleep(1);login_kamu()
+        	print("\n\033[0m~> Lisensi key Kamu Sudah Aktif <~");time.sleep(1);login_kamu()
     else:
         print("\n\033[0m╰─ Lisensi key Kamu Sudah Kadaluarsa")
         os.system("rm -rf .key.txt");exit()
