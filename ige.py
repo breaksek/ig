@@ -542,7 +542,7 @@ class instagram:
                     tree.add(f"\r{N}Mengikuti : {H}{mengikut}{N}")
                     tree.add(f"\r{N}Postingan : {H}{postingan}{N}").add(f"\r{N}Token : {H}{coki}{N}")
                     prints(tree)
-                    open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
+                    open(f"result/ok-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
                     success.append(user)
                     #os.popen("play-audio data/dapet.mp3")
                     break
@@ -554,7 +554,7 @@ class instagram:
                     tree.add(f"\r{N}Mengikuti : {K}{mengikut}{N}")
                     tree.add(f"\r{N}Postingan : {H}{postingan}{N}")
                     prints(tree)
-                    open(f"result/checkpoint-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
+                    open(f"result/int-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                     checkpoint.append(user)
                     break
                 else:
@@ -617,7 +617,7 @@ class instagram:
                 tree.add(f"\r{N}Mengikuti : {K}{mengikut}{N}")
                 tree.add(f"\r{N}Postingan : {H}{postingan}{N}")
                 prints(tree)
-                open(f"result/checkpoint-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
+                open(f"result/cp-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}\n')
                 checkpoint.append(user)
                 
 
