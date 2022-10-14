@@ -423,7 +423,7 @@ class instagram:
         global prog,des
         prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
         des = prog.add_task('',total=len(internal))
-        print('\n[•] Hasil OK disimpan ke: result/success.txt\n[•] Hasil CP disimpan ke: result/checkpoint.txt'%(day,day))
+        print('\n[•] Hasil OK disimpan ke: result/Success.txt\n[•] Hasil CP disimpan ke: result/Checkpoint.txt'%(day,day))
         print('[•] Jika alamat IP di-spam, aktifkan mode pesawat selama 10 detik\n')
         with prog:
             with ThreadPoolExecutor(max_workers=15) as shinkai:
@@ -542,7 +542,7 @@ class instagram:
                     tree.add(f"\r{N}Mengikuti : {H}{mengikut}{N}")
                     tree.add(f"\r{N}Postingan : {H}{postingan}{N}").add(f"\r{N}Token : {H}{coki}{N}")
                     prints(tree)
-                    open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
+                    open(f"result/Success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
                     success.append(user)
                     #os.popen("play-audio data/dapet.mp3")
                     break
@@ -604,7 +604,7 @@ class instagram:
                 tree.add(f"\r{N}Mengikuti : {H}{mengikut}{N}")
                 tree.add(f"\r{N}Postingan : {H}{postingan}{N}").add(f"\r{N}Token : {H}{coki}{N}")
                 prints(tree)
-                open(f"result/success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
+                open(f"result/Success-{day}.txt","a").write(f'{user}|{pw}|{pengikut}|{mengikut}|{coki}\n')
                 success.append(user)
                 #os.popen("play-audio data/dapet.mp3")
                 #os.popen("play-audio data/dapet.mp3")
