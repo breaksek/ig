@@ -423,7 +423,7 @@ class instagram:
         global prog,des
         prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
         des = prog.add_task('',total=len(internal))
-        print('\n[•] Hasil OK disimpan ke: result/%s.txt\n[•] Hasil CP disimpan ke: result/%s.txt'%(day,day))
+        print('\n[•] Hasil OK disimpan ke: result/ok.txt\n[•] Hasil CP disimpan ke: result/cp.txt'%(day,day))
         print('[•] Jika alamat IP di-spam, aktifkan mode pesawat selama 10 detik\n')
         with prog:
             with ThreadPoolExecutor(max_workers=15) as shinkai:
